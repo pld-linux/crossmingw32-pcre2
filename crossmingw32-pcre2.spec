@@ -3,7 +3,7 @@ Summary:	Perl-Compatible Regular Expression library - MinGW32 cross version
 Summary(pl.UTF-8):	Biblioteka perlowych wyrażeń regularnych - wersja skrośna dla MinGW32
 Name:		crossmingw32-%{realname}
 Version:	10.45
-Release:	2
+Release:	3
 License:	BSD (see LICENCE)
 Group:		Development/Libraries
 Source0:	https://github.com/PhilipHazel/pcre2/releases/download/pcre2-%{version}/%{realname}-%{version}.tar.bz2
@@ -120,7 +120,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS.md ChangeLog LICENCE.md NEWS README
-%dir %{_docdir}
 %{_libdir}/libpcre2-8.dll.a
 %{_libdir}/libpcre2-16.dll.a
 %{_libdir}/libpcre2-32.dll.a
